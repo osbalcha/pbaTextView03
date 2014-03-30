@@ -18,6 +18,9 @@
 		2E9A1A5318E83EC2004926DE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9A1A3218E83EC1004926DE /* Cocoa.framework */; };
 		2E9A1A5B18E83EC2004926DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E9A1A5918E83EC2004926DE /* InfoPlist.strings */; };
 		2E9A1A5D18E83EC2004926DE /* pbaTextView03Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9A1A5C18E83EC2004926DE /* pbaTextView03Tests.m */; };
+		2EDE881818E8812B00B839F4 /* MiTextoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE881718E8812B00B839F4 /* MiTextoView.m */; };
+		2EDE881C18E8841D00B839F4 /* AlmacenTexto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE881B18E8841D00B839F4 /* AlmacenTexto.m */; };
+		2EDE882018E884C700B839F4 /* MiManagerTexto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE881F18E884C700B839F4 /* MiManagerTexto.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,12 @@
 		2E9A1A5818E83EC2004926DE /* pbaTextView03Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pbaTextView03Tests-Info.plist"; sourceTree = "<group>"; };
 		2E9A1A5A18E83EC2004926DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2E9A1A5C18E83EC2004926DE /* pbaTextView03Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pbaTextView03Tests.m; sourceTree = "<group>"; };
+		2EDE881618E8812B00B839F4 /* MiTextoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiTextoView.h; sourceTree = "<group>"; };
+		2EDE881718E8812B00B839F4 /* MiTextoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiTextoView.m; sourceTree = "<group>"; };
+		2EDE881A18E8841D00B839F4 /* AlmacenTexto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlmacenTexto.h; sourceTree = "<group>"; };
+		2EDE881B18E8841D00B839F4 /* AlmacenTexto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlmacenTexto.m; sourceTree = "<group>"; };
+		2EDE881E18E884C700B839F4 /* MiManagerTexto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiManagerTexto.h; sourceTree = "<group>"; };
+		2EDE881F18E884C700B839F4 /* MiManagerTexto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiManagerTexto.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +126,9 @@
 			children = (
 				2E9A1A4418E83EC1004926DE /* AppDelegate.h */,
 				2E9A1A4518E83EC1004926DE /* AppDelegate.m */,
+				2EDE882118E884CD00B839F4 /* Controlador-Texto */,
+				2EDE881D18E8842700B839F4 /* Modelo-Texto */,
+				2EDE881918E8834900B839F4 /* Vista-Texto */,
 				2E9A1A4718E83EC1004926DE /* MainMenu.xib */,
 				2E9A1A4A18E83EC1004926DE /* Images.xcassets */,
 				2E9A1A3918E83EC1004926DE /* Supporting Files */,
@@ -152,6 +164,33 @@
 				2E9A1A5918E83EC2004926DE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2EDE881918E8834900B839F4 /* Vista-Texto */ = {
+			isa = PBXGroup;
+			children = (
+				2EDE881618E8812B00B839F4 /* MiTextoView.h */,
+				2EDE881718E8812B00B839F4 /* MiTextoView.m */,
+			);
+			name = "Vista-Texto";
+			sourceTree = "<group>";
+		};
+		2EDE881D18E8842700B839F4 /* Modelo-Texto */ = {
+			isa = PBXGroup;
+			children = (
+				2EDE881A18E8841D00B839F4 /* AlmacenTexto.h */,
+				2EDE881B18E8841D00B839F4 /* AlmacenTexto.m */,
+			);
+			name = "Modelo-Texto";
+			sourceTree = "<group>";
+		};
+		2EDE882118E884CD00B839F4 /* Controlador-Texto */ = {
+			isa = PBXGroup;
+			children = (
+				2EDE881E18E884C700B839F4 /* MiManagerTexto.h */,
+				2EDE881F18E884C700B839F4 /* MiManagerTexto.m */,
+			);
+			name = "Controlador-Texto";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,8 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EDE882018E884C700B839F4 /* MiManagerTexto.m in Sources */,
 				2E9A1A4618E83EC1004926DE /* AppDelegate.m in Sources */,
 				2E9A1A3F18E83EC1004926DE /* main.m in Sources */,
+				2EDE881C18E8841D00B839F4 /* AlmacenTexto.m in Sources */,
+				2EDE881818E8812B00B839F4 /* MiTextoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +508,7 @@
 				2E9A1A6218E83EC2004926DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E9A1A6318E83EC2004926DE /* Build configuration list for PBXNativeTarget "pbaTextView03Tests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +517,7 @@
 				2E9A1A6518E83EC2004926DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
