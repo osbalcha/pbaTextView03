@@ -13,6 +13,11 @@
         <customObject id="-3" userLabel="Application"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
+                <outlet property="MiVista" destination="jG8-zh-F8x" id="VCl-8g-uI1"/>
+                <outlet property="btnDesarrollo" destination="4W4-uy-BvT" id="8VS-0b-N3C"/>
+                <outlet property="btnDesenlace" destination="4dQ-wP-QHE" id="mER-wK-JX0"/>
+                <outlet property="btnIntroduccion" destination="IDc-7R-J1b" id="5XN-hW-Oq2"/>
+                <outlet property="miTView" destination="jG8-zh-F8x" id="PWm-rr-Sni"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -682,7 +687,7 @@
                             <rect key="frame" x="1" y="1" width="438" height="245"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <textView ambiguous="YES" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="jG8-zh-F8x">
+                                <textView ambiguous="YES" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="jG8-zh-F8x" customClass="MiTextoView">
                                     <rect key="frame" x="0.0" y="0.0" width="438" height="245"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -711,6 +716,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="cellTitle"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="Introducción:" target="Voe-Tx-rLC" id="Uap-i5-sLj"/>
+                        </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4W4-uy-BvT">
                         <rect key="frame" x="204" y="47" width="74" height="19"/>
@@ -719,6 +727,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="cellTitle"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="Desarrollo:" target="Voe-Tx-rLC" id="rcS-iJ-00h"/>
+                        </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4dQ-wP-QHE">
                         <rect key="frame" x="387" y="47" width="73" height="19"/>
@@ -727,6 +738,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="cellTitle"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="Desenlace:" target="Voe-Tx-rLC" id="pbT-G4-S9a"/>
+                        </connections>
                     </button>
                     <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HYe-SZ-euN">
                         <rect key="frame" x="16" y="18" width="446" height="21"/>
